@@ -10,8 +10,7 @@ according to their behavior and preferences.
 ## Our Approach 
 Our strategy emphasizes the construction of a user profile that can efficiently generate highly
 personalized recommendations. For some key data points, we gather the information directly during the user's initial
-connection to the application. The rest is estimated via Gaussian Processes, a statistical technique (discussed further
-below) that allows us to build a user model with a limited number of input questions (less than 5) and refine this model
+connection to the application. The rest is estimated via Gaussian Processes, a statistical technique (see [GP.md](GP.md)) that allows us to build a user model with a limited number of input questions (less than 5) and refine this model
 as the user interacts with the app. Our initial focus lies on user preferences, and as our user base expands, we plan to
 incorporate collaborative filtering for further enhancement of recommendations.
 
