@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adventure List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container py-5">
+    <h1 class="mb-5">Adventures</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Adrenalin Index</th>
+            <th>Kid's friendly</th>
+            <th>Promoted</th>
+            <th>Location</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for adventure in adventures %}
+        <tr>
+            <td>{{ adventure.name }}</td>
+            <td>{{ adventure.description }}</td>
+            <td>{{ adventure.category }}</td>
+            <td>{{ adventure.adrenalin }}</td>
+            <td>{{ adventure.kids }}</td>
+            <td>{{ adventure.promoted }}</td>
+            <td>{{ adventure.location }}</td>
+            <td>{{ adventure.latitude }}</td>
+            <td>{{ adventure.longitude }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+

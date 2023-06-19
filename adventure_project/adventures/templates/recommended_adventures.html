@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Recommended Adventures</h1>
+  <ul>
+    {% for adventure in object_list %}
+      <li>
+        <h2><a href="{% url 'adventure-detail' adventure.id %}">{{ adventure.name }}</a></h2>
+        <p>{{ adventure.description }}</p>
+      </li>
+    {% empty %}
+      <li>No recommendations available.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

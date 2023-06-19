@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hyll"
+version = "0.1.0"
+description = "quick recommender system for adventures"
+authors = ["Guillaume Pernelle <gpernelle@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.2"
+faker = "^18.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
